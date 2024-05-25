@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技職杯黑克松</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navbar">
+        <ol>
+            <li><a href="#home" onclick="hide('page-2'), show('page-1')">資訊主頁</a></li>
+            <li><a href="#home" onclick="hide('page-1'), show('page-2')">關於簡報</a></li>
+        </ol>
+    </div>
+
+    <div class="background">
+        <div class="page1" id="page-1">
+            <div class="wrapper">
+                <!--   some content     -->
+                <main class="main">
+                    <div class="post">
+                        <h3>關於我們</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, accusantium.
+                    </div>
+                    <div class="post">
+                        <h3>環保知識一</h3>
+                    </div>
+                    <div class="post">
+                        <h3>貼文資訊</h3>
+                    </div>
+                    <div class="post">
+                        <h3>貼文資訊</h3>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="page2" id="page-2">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                        border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGP8tZzio&#x2F;xo8xG4wFK6QTCkZbP399pQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+           </div>
+        </div>
+  </div>
+  <script>
+        function hide(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.visibility = 'hidden'; // Hide the element
+            section.style.height = '0';          // Set the height to 0
+            section.style.overflow = 'hidden';   // Prevent showing any content
+        }
+
+        function show(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.visibility = 'visible'; // Make the element visible
+            section.style.height = 'auto';        // Reset the height to auto
+            section.style.overflow = 'visible';   // Allow content to show
+        }
+    </script>
+    <script>
+        // Initialize
+        hide('page-2'), show('page-1')
+    </script>
+</div>
+</body>
+</html>

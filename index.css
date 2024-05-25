@@ -1,0 +1,85 @@
+.navbar {
+    position: sticky;
+    background-color: greenyellow;
+    height: 60px;
+    margin-bottom: 2px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.navbar ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px; /* �K�[��涵�ؤ��������Z */
+}
+
+.navbar li:last-child {
+    margin-right: 0; 
+}
+
+.navbar li a {
+    text-decoration: underline;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #555; 
+}
+
+.page1 {
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.background {
+    background-color: #f0f4f8; /* 更淺的背景色提升對比 */
+}
+
+.wrapper {
+    display: flex;
+    grid-template-columns: minmax(0, 1fr) 248px;
+    grid-gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.post{
+    border: 2px solid #333; 
+    border-radius: 10px;
+    padding: 20px; 
+    width: 300px; 
+    min-height: 10px;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px; 
+}
+
+
+.aside{
+    background-color: yellow;
+}
